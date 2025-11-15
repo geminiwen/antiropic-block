@@ -11,7 +11,7 @@ LOG_FILE="$LOG_DIR/daemon.log"
 PID_FILE="$SCRIPT_DIR/run-daemon.pid"
 
 # 时间窗口配置 (UTC-8 时区)
-TIMEZONE="Asia/Shanghai"  # UTC+8
+TIMEZONE="America/Los_Angeles"  # 美国西海岸时区 (PST/PDT)
 START_HOUR=9   # 开始时间：9:00
 END_HOUR=20    # 结束时间：20:00
 
