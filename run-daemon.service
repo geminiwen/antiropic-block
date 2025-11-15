@@ -1,0 +1,18 @@
+[Unit]
+Description=Run Script Every 37 Minutes Daemon
+After=network.target
+
+[Service]
+Type=simple
+User=%USER%
+WorkingDirectory=/Users/geminiwen/Code/antiropic-block
+ExecStart=/Users/geminiwen/Code/antiropic-block/run-daemon.sh
+Restart=always
+RestartSec=10
+
+# 日志输出
+StandardOutput=append:/Users/geminiwen/Code/antiropic-block/logs/systemd.log
+StandardError=append:/Users/geminiwen/Code/antiropic-block/logs/systemd-error.log
+
+[Install]
+WantedBy=multi-user.target
